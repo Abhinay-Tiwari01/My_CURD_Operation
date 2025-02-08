@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CURD</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script id="sweetalert" src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+</head>
+<body>
+    <div id="head">
+        <h1>Hello There This is CURD Operation !!!</h1>
+    </div>
+    <div class="top-btn">
+        <div class="top-right-btn">
+            <button id="add-new">Add new</button>
+            <button id="erase">Erase</button>
+        </div>
+        <div class="top-left-btn">
+            <div class="left">
+                <input type="search" id="searchbox" placeholder="Enter Your KeyWord">
+                <i class="fa fa-search" ></i>
+                <!-- <button id="search-btn">  <i class="fa fa-search" ></i> </button> -->
+            </div>
+        </div>
+    </div>
+    <div class="table-list">
+        <table>
+            <tr>
+                <th>Sr No</th>
+                <th>Id</th>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>E-Mail</th>
+                <th>Mobile</th>
+                <th>Profile</th>
+                <th>Job Title</th>
+                <th>Actiom</th>
+            </tr> 
+            <!-- <td>hellow rold</td>
+            <td>hellow rold</td>
+            <td>hellow rold</td>
+            <td>hellow rold</td>
+            <td>hellow rold</td>
+            <td>hellow rold</td>
+            <td>hellow rold</td> -->
+        <tbody id="tabledata"></tbody>
+
+        </table>
+        <div class="model ">
+            <i class="fa fa-times-circle close-icon"></i>
+            <div class="left-model">
+                <div class="img-box">
+                    <img id="image" src="Images/profile.png"  width="120" height="120" >
+                    <!-- <input type="file" id="myFile"> -->
+                    <i class="fa fa-upload"></i>
+                    <input type="file" id="myfile">
+                </div>
+                <div>
+                    <h6>this is test</h6>
+                </div>
+            </div>
+            <div class="right-model">
+                <form id="register-form">
+                    <div class="inputdata">
+                        <label for="id" class="label">Id</label>
+                        <input type="text" required id="id">
+                    </div>
+                    <div class="inputdata">
+                        <label for="fname" class="label" >First Name</label>
+                        <input type="text" required id="fname">
+                    </div>
+                    <div class="inputdata">
+                        <label for="lname" class="label">Last Name</label>
+                        <input type="text" required id="lname">
+                    </div>
+                    <div class="inputdata">
+                        <label for="email" class="label">E-mail</label>
+                        <input type="text" id="email">
+                    </div>
+                    <div class="inputdata">
+                        <label for="mobile" class="label">Mobile</label>
+                        <input type="text" required id="mobile">
+                    </div>
+                    <div class="inputdata">
+                        <label for="jobtitle" class="label">Job Title</label>
+                        <input type="text" required id="jobtitle">
+                    </div>
+                    <div class="inputdata">
+                        <label for="officecode" class="label">Office Code</label>
+                        <input type="text" required id="officecode">
+                    </div>
+                    <div>
+                        <button id="reg-btn">Register</button>
+                        <button id="update-btn" disabled="disabled">Update</button>
+                    </div>
+    
+                </form>
+                
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

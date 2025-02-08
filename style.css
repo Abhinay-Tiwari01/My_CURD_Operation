@@ -1,0 +1,326 @@
+* {
+    margin: 0%;
+    padding: 0%;
+    /* background-color: #D9CAB3; */
+}
+body{
+    background-color: #D9CAB3 ;
+}
+
+/* fpr head to give color and text  */
+#head {
+    /* background-color: #BC8034; */
+    background-image: linear-gradient(#D9CAB3,#90323D, #D9CAB3);
+    margin-top: 5px;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* container of button  */
+.top-btn {
+    /* background-color: aqua; */
+    height: 50px;
+    display: flex;
+}
+
+/* under container this is the div  */
+
+.top-btn .top-right-btn {
+    /*background-color: aquamarine;*/
+    width: 50%;
+    margin-top: 5px;
+    margin-left: 20px;
+
+}
+
+/* under that div this is the add new button css property  */
+.top-btn .top-right-btn #add-new {
+    background-image: linear-gradient(#D9CAB3,#90323D);
+    border-style: hidden;
+    border-radius: 10px;
+    /* margin-top: 5px; */
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+
+}
+
+/* under that div this is the add new button css property  */
+
+.top-btn .top-right-btn #erase {
+    background-image: linear-gradient( #D9CAB3,#90323D);
+    border-style: hidden;
+    border-radius: 10px;
+    margin-left: 20px;
+    height: 40px;
+    width: 150px;
+    font-size: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+/* forthe leeft section of top page this is the code and div under the conmtainer  */
+.top-btn .top-left-btn {
+    /* background-color:bisque; */
+    width: 50%;
+    margin-top: 5px;
+
+}
+
+.top-btn .top-left-btn .left {
+    margin-left: 60vmin;
+}
+
+/* here is the combination of button and icon code */
+.top-btn .top-left-btn i {
+    font-size: 15px;
+    color: black;
+}
+
+.top-btn .top-left-btn #search-btn {
+    background-image: linear-gradient(#8C7A6B, #D9CAB3);
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    border: hidden;
+
+}
+
+/* searh box cide */
+.top-btn .top-left-btn #searchbox {
+    color: blue;
+    background-color: #D9CAB3;
+    border: none;
+    backface-visibility: visible;
+    border-bottom: 0.58px solid;
+    width: 40vmin;
+    height: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 20px;
+}
+
+/* table property  */
+.table-list {
+    /* background-color: red; */
+    width: 100%;
+    padding: 30px;
+}
+
+/* table width and border */
+.table-list table {
+    width: 100%;
+    border: 1px solid;
+    height: 40px;
+}
+
+/* table header margin and other property */
+.table-list table th {
+    border-right: 1px solid;
+    border-bottom: 1px solid;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    padding: 1px;
+    font-size: 18px;
+    background-color: #90323D;
+    /* background-image: linear-gradient(#90323D, #D9CAB3); */
+}
+
+/* table list and margin and other property */
+.table-list table td {
+    border-right: 1px solid;
+    /* border-bottom: 0.5px solid; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: auto;
+    padding: 1px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    background-image: linear-gradient(to right, #90323D, #D9CAB3);
+
+}
+
+/* table action button edit and delete (trash) */
+.table-list table td i {
+    padding: 5px;
+    font-size: 20px;
+    color: #8C7A6B;
+
+    /* text-align: center; */
+}
+
+/* acction button css */
+
+.table-list table td #edit {
+    background-image: linear-gradient(#90323D, #5E0B15);
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+}
+
+.table-list table td #trash {
+    background-image: linear-gradient(#90323D, #5E0B15);
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+}
+
+/* add new details tab */
+
+.model {
+    position: fixed;
+    width: 0%;
+    height: 0px;
+    background-color: #8C7A6B;
+    top: 0%;
+    left: 0%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    border-top: 20px groove #5E0B15;
+    border-right: 20px groove #5E0B15;
+    border-radius: 10px;
+    opacity: 0;
+    z-index: -1;
+    transition: 0.5s ease-out;
+}
+
+.model.active {
+    opacity: 1;
+    z-index: 1;
+    width: 50%;
+    height: 600px;
+    top: 50%;
+    left: 50%;
+}
+
+/* css code of right section */
+.model .left-model {
+    background-color: #8C7A6B;
+    width: 30%;
+    height: 90%;
+    /* float: left; */
+    /* padding: -20px; */
+
+
+}
+
+.model .left-model .img-box {
+    width: 100%;
+    height: 300px;
+    background-color: #8C7A6B;
+    display: flex;
+    /* padding: 30px; */
+    position: relative;
+}
+
+.model .left-model .img-box #image {
+    margin-left: 30px;
+    margin-top: 30px;
+    padding: 10px;
+    border-radius: 70px;
+    /* background-image: linear-gradient(blue, aqua); */
+    background-image: linear-gradient(to right, #90323D, #D9CAB3);
+
+}
+
+.model .left-model .img-box #myfile {
+    width: 40px;
+    height: 70px;
+    padding: 10px;
+    position: absolute;
+    right: 45px;
+    top: 65px;
+    
+    opacity: 0;
+
+}
+
+.model .left-model .img-box i {
+    font-size: 25px;
+    padding: 10px;
+    position: absolute;
+    right: 45px;
+    top: 65px;
+    /* color: grey; */
+    color: #5E0B15 ;
+}
+
+/* css code of right section  */
+.model .right-model {
+    /* background-color: red; */
+    width: 70%;
+    height: 95%;
+    /* float: left; */
+    border-left: 5px groove black;
+    padding: 15px;
+
+}
+
+.model .right-model #register-form {
+    height: 100%;
+}
+
+.model .right-model .inputdata {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.model .right-model .inputdata .label {
+    font-family: sans-serif;
+    font-size: 22px;
+    font-weight: bold;
+    /* padding: 10px; */
+    margin: 20px 15px;
+}
+
+.model .right-model .inputdata input {
+    width: 70%;
+    padding: 13px;
+    border: none;
+    margin: 10px 0px;
+    border-bottom: 3px solid;
+    outline: none;
+    background-color: #D9CAB3;
+    font-size: 16px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+
+.model .right-model #reg-btn {
+    background-image: linear-gradient(#90323D,#D9CAB3);
+    border-style: hidden;
+    border-radius: 10px;
+    margin-left: 20px;
+    height: 40px;
+    width: 250px;
+    margin-right: 40px;
+    margin-top: 30px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+.model .right-model #update-btn {
+    background-image: linear-gradient(#BC8034, #D9CAB3);
+    border-style: hidden;
+    border-radius: 10px;
+    margin-left: 20px;
+    height: 40px;
+    width: 250px;
+    margin-top: 10px;
+    margin-left: 30px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.model .close-icon {
+    position: absolute;
+    right: -20px;
+    top: -30px;
+    padding: 5px;
+    font-size: 30px;
+    color: #BC8034;
+}
+
